@@ -1,21 +1,19 @@
 import { Autocomplete } from '@mui/material'
 import TextField from '@mui/material/TextField'
-import './App.css'
 
-function Dashboard() {
-
+const Cargo = () => {
   return (
-    <div className="dashboard">
-      <h1>Dashboard</h1>
+    <div className="cargo">
+      <h1>Cargo</h1>
       <Autocomplete
         disablePortal
         id="combo-box-demo"
         options={['seila', 'pão']}
         sx={{ width: 300 }}
-        renderInput={(params) => <TextField {...params} label="Movie" />}
+        renderInput={(params) => <TextField {...params} label="Cargos" />}
       />
     </div>
   )
 }
 
-export default Dashboard
+export default Cargo
